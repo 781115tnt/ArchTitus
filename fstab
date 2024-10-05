@@ -1,0 +1,40 @@
+# /dev/nvme0n1p3 LABEL=ROOT
+UUID=2106e912-f5b3-4e44-9bf5-5308e524ae14	/         	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=264,subvol=/@	0 0
+
+# /dev/nvme0n1p3 LABEL=ROOT
+UUID=2106e912-f5b3-4e44-9bf5-5308e524ae14	/run/timeshift/96374/backup	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=5,subvol=/	0 0
+
+# /dev/sdb1
+UUID=076595f1-feaa-4f11-8c8b-4debb03b298a	/run/media/thanhtran/1TBEXTDATA	btrfs     	nofail,autodefrag,noatime,nodiratime,rw,compress=zstd:3,noacl,space_cache=v2,commit=120,subvolid=5,subvol=/     0 0
+
+# /dev/sdc1 LABEL=4TBN300
+UUID=f39e49a2-f224-45e3-a357-c9a4ba982045	/run/media/thanhtran/4TBN300	btrfs		nofail,autodefrag,noatime,nodiratime,rw,compress=zstd:3,noacl,space_cache=v2,commit=120,subvolid=5,subvol=/     0 0
+
+# /dev/nvme0n1p6
+UUID=4B49-15ED      	/run/media/thanhtran/DEV	vfat      	rw,nosuid,nodev,relatime,uid=1000,gid=1001,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,showexec,utf8,flush,errors=remount-ro	0 2
+
+# /dev/sdd2 LABEL=4TBRED
+UUID=6c67eb3d-8a69-43ae-ab37-feacb402d139	/run/media/thanhtran/4TBRED	btrfs     	nofail,autodefrag,noatime,nodiratime,rw,compress=zstd:3,noacl,space_cache=v2,commit=120,subvolid=5,subvol=/     0 0
+
+# /dev/sda2 LABEL=1TBDATA
+UUID=aef7a19c-b3e0-40eb-808e-ed5e1f3d734d	/run/media/thanhtran/1TBDATA	btrfs     	nofail,autodefrag,noatime,nodiratime,rw,compress=zstd:3,noacl,space_cache=v2,commit=120,subvolid=5,subvol=/     0 0
+
+# /dev/nvme0n1p3 LABEL=ROOT
+UUID=2106e912-f5b3-4e44-9bf5-5308e524ae14	/.snapshots	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=260,subvol=/@.snapshots	0 0
+
+# /dev/nvme0n1p3 LABEL=ROOT
+UUID=2106e912-f5b3-4e44-9bf5-5308e524ae14	/home     	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=259,subvol=/@home	0 0
+
+# /dev/nvme0n1p3 LABEL=ROOT
+UUID=2106e912-f5b3-4e44-9bf5-5308e524ae14	/tmp      	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=258,subvol=/@tmp	0 0
+
+# /dev/nvme0n1p3 LABEL=ROOT
+UUID=2106e912-f5b3-4e44-9bf5-5308e524ae14	/var      	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,commit=120,subvolid=257,subvol=/@var	0 0
+
+# /dev/nvme0n1p2 LABEL=EFIBOOT
+UUID=D641-9E55      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/nvme0n1p4
+UUID=f8a8ddba-6bbc-4b45-97bd-daf7a9505b5c	none      	swap      	defaults  	0 0
+/dev/disk/by-id/wwn-0x5000039acb901066-part2 /mnt/wwn-0x5000039acb901066-part2 auto nosuid,nodev,nofail,noauto 0 0
+/dev/disk/by-id/wwn-0x50014ee215adf391-part1 /mnt/wwn-0x50014ee215adf391-part1 auto nosuid,nodev,nofail,noauto 0 0

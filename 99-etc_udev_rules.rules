@@ -1,0 +1,3 @@
+SUBSYSTEM=="block", ATTRS{uuid}=="00000000-0100-0000-e4d2-5c638e664f01", ATTRS{wwid}=="eui.0000000001000000e4d25c638e664f01", ACTION=="add", RUN+="/bin/setfacl -m g:libvirt:rw- /dev/$name"
+
+SUBSYSTEM=="block", ATTRS{uuid}=="00000000-0000-0000-8ce3-8e0300595c4d", ATTRS{wwid}=="eui.00000000000000008ce38e0300595c4d", ACTION=="add", RUN+="/bin/setfacl -m g:libvirt:rw- /dev/$name"
