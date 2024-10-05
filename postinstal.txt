@@ -120,7 +120,10 @@ sudo cp -R Roboto-Condensed /usr/share/fonts/
 //to load: dconf load / < dconf.dump
 //dconf load / < dconf.dump
 
-
++ VLC remove file: 
+	mkdir -p ~/.local/share/vlc/lua/extensions/
+	cp vlc-delete.lua ~/.local/share/vlc/lua/extensions/
+	
 + List all orphan apps: sudo pacman -Qqtd
 + Use pamac to remove orphan apps or: sudo pacman -Qtdq | sudo pacman -Rns -
 
