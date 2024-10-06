@@ -91,6 +91,9 @@ echo "style=Adwaita-Dark" >> ~/.config/Trolltech.conf
 echo "export QT_STYLE_OVERRIDE=Adwaita-Dark" >> ~/.bash_profile
 echo "export MOZ_ENABLE_WAYLAND=1" >> ~/.bash_profile
 
+echo "export PATH=$PATH:~/firefox" >> ~/.bash_profile
+
+
 cp -Rf  vlc ~/.config/
 mkdir -p ~/.local/share/vlc/lua/extensions/
 cp vlc-delete.lua ~/.local/share/vlc/lua/extensions/
