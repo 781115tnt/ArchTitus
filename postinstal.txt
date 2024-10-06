@@ -1,6 +1,9 @@
 sudo pacman -Sy archlinux-keyring
 Server = https://archive.archlinux.org/repos/2024/08/01/$repo/os/$arch
-
++ Keep GNOME 46:
+	sudo nano /etc/pacman.conf add:
+		IgnorePkg   = mutter tracker3 tinysparql
+		IgnoreGroup = gnome
 
 + Remove unused apps
 sudo pacman -R gnome-calendar gnome-contacts simple-scan gnome-maps gnome-music gnome-software totem gnome-weather gnome-tour gnome-connections
